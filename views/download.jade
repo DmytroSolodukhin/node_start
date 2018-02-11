@@ -1,0 +1,7 @@
+extends layout
+
+block content
+    h1= title
+    each image in images
+        a(href='/download/' + image)
+            img.downloadImage(src="/public/images/" + image)

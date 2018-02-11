@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= 'Admin Page'
+  p Welcome to #{title}
+  img.downloadImage(src="/public/images/user.jpg")
+  ul
+  each link in links
+    li
+      a(href=link.url) #{link.title}
